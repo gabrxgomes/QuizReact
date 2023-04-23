@@ -1,7 +1,14 @@
 import "./GameOver.css";
 
-const GameOver = () => {
-    return <div>Game</div>
-};
+const GameOver = ({retry}) => {
+    return (
+        <div>
+            {""}
+            <h1>Game Over</h1>
+            <button onClick={retry}> Resetar Jogo</button>
+        </div>
 
-export default GameOver;
+    );
+
+};
+export default GameOver; //o loop perfeito entre os states
