@@ -1,7 +1,7 @@
 //importar o css
 import "./StartScreen.css"
 
-const StartScreen = () => {
+const StartScreen = ({startGame}) => {
     return (
         <div className= "start">
 
@@ -12,7 +12,7 @@ const StartScreen = () => {
             <p>
                 Clique no botão abaixo para começar a jogar !
             </p>
-            <button>Começar o jogo</button>
+            <button onClick={startGame}>Começar o jogo</button>
             
         </div>
     )
