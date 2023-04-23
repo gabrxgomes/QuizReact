@@ -1,23 +1,25 @@
 import logo from './logo.svg';
+//REACT
+
+import {useCallback, useEffect, useState } from "react";
+
+//CSS
 import './App.css';
+
+
+//IMPORTAR AS PALAVRAS
+import { wordsList } from "./data/words";
+
+//components
+import StartScreen from './components/StartScreen';
+
+
+const stages = []
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <StartScreen />
     </div>
   );
 }
